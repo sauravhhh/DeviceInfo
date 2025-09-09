@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device & Browser Information</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-laptop-code"></i>
+                    DeviceInfo
+                </div>
+                <button class="refresh-btn" id="refreshBtn">
+                    <i class="fas fa-sync-alt"></i>
+                    Refresh
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="page-title">
+                <h1>Your Device & Browser Information</h1>
+                <p>Comprehensive details about your device, browser, and network</p>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="card-header">
+                        <div class="card-icon device-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h2 class="card-title">Device Information</h2>
+                    </div>
+                    <div id="deviceInfo">
+                        <div class="loading">
+                            <div class="loading-spinner"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="card-header">
+                        <div class="card-icon browser-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h2 class="card-title">Browser Details</h2>
+                    </div>
+                    <div id="browserInfo">
+                        <div class="loading">
+                            <div class="loading-spinner"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="card-header">
+                        <div class="card-icon network-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h2 class="card-title">Network Information</h2>
+                    </div>
+                    <div id="networkInfo">
+                        <div class="loading">
+                            <div class="loading-spinner"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="card-header">
+                        <div class="card-icon location-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h2 class="card-title">Location Details</h2>
+                    </div>
+                    <div id="locationInfo">
+                        <div class="loading">
+                            <div class="loading-spinner"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="footer-text">Made with <i class="fas fa-heart"></i> by Sauravhhh</p>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast">Information refreshed successfully!</div>
+
+    <script src="script.js"></script>
+</body>
+  </html>
